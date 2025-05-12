@@ -1,5 +1,5 @@
 class Book extends Media {
-    constructor(author, title, pages) {
+    constructor(author, title, pages ,isCheckedOut = false, ratings = []) {
         super(title = title, isCheckedOut = false, ratings = []);
         this._author = author;
         this._pages = pages;
@@ -13,6 +13,6 @@ class Book extends Media {
         return this._pages;
     }
 
-    
+
 
 }
